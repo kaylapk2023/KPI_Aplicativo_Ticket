@@ -111,14 +111,14 @@
   .tech-table tbody tr:nth-child(even) { background: #f4f7f9; }
 
   /* ── TARJETAS DE CAPA ── */
-  .layer-card {
+  .-card {
     background: #f8fbff;
     border: 1px solid #d0e4f7;
     border-radius: 8px;
     padding: 18px 22px;
     margin-bottom: 16px;
   }
-  .layer-card h4 { margin: 0 0 8px; font-size: 15px; }
+  .-card h4 { margin: 0 0 8px; font-size: 15px; }
 
   /* ── IMAGENES ── */
   .imagen-reporte {
@@ -225,11 +225,11 @@
   <ul>
     <li><a href="#descripcion">Descripción General</a></li>
     <li><a href="#arquitectura">Arquitectura</a></li>
-    <li><a href="#data-layer">Data Layer</a></li>
-    <li><a href="#app-layer">Application Layer</a></li>
-    <li><a href="#etl-layer">ETL Layer</a></li>
-    <li><a href="#dw-layer">Data Warehouse</a></li>
-    <li><a href="#presentation-layer">Capa de Presentación</a></li>
+    <li><a href="#data-">Data </a></li>
+    <li><a href="#app-">Application </a></li>
+    <li><a href="#etl-">ETL </a></li>
+    <li><a href="#dw-">Data Warehouse</a></li>
+    <li><a href="#presentation-">Capa de Presentación</a></li>
     <li><a href="#conclusiones">Conclusiones</a></li>
   </ul>
 </nav>
@@ -329,28 +329,28 @@
 
     <p>La arquitectura se organiza en las siguientes capas:</p>
 
-    <div class="layer-card">
+    <div class="-card">
       <h4>📁 Data Sources</h4>
       <p>La información se origina en archivos Excel y sistemas transaccionales. Estos insumos se incorporan al ecosistema mediante procesos manuales o parcialmente automatizados.</p>
     </div>
-    <div class="layer-card">
-      <h4>🗄️ Data Layer</h4>
+    <div class="-card">
+      <h4>🗄️ Data </h4>
       <p>Toda la información se consolida en el almacén de datos, funcionando como repositorio centralizado. Además, se integran datos capturados desde aplicaciones desarrolladas con apoyo de Cursor</p>
     </div>
-    <div class="layer-card">
-      <h4>🧩 Application Layer</h4>
+    <div class="-card">
+      <h4>🧩 Application </h4>
       <p>La interacción con los usuarios se gestiona a través de aplicativo, que ofrece una interfaz intuitiva para la carga, modificación y consulta de datos.</p>
     </div>
-    <div class="layer-card">
-      <h4>🔄 ETL Layer</h4>
+    <div class="-card">
+      <h4>🔄 ETL </h4>
       <p>Con Microsoft Fabric (Dataflows y Pipelines) se automatiza la ingesta y transformación de datos hacia el Data Warehouse. Se emplean Notebooks en Python para ejecutar validaciones y generar notificaciones.</p>
     </div>
-    <div class="layer-card">
-      <h4>🧱 Data Warehouse Layer</h4>
+    <div class="-card">
+      <h4>🧱 Data Warehouse </h4>
       <p>Los datos procesados se almacenan en un Fabric Data Warehouse, diseñado para consolidar información y habilitar análisis avanzados con medidas DAX y dimensiones de negocio.</p>
     </div>
-    <div class="layer-card">
-      <h4>📊 Presentation Layer</h4>
+    <div class="-card">
+      <h4>📊 Presentation </h4>
       <p>Los usuarios acceden a reportes dinámicos mediante Power BI, con dashboards interactivos que favorecen la toma de decisiones en tiempo real.</p>
     </div>
   </section>
@@ -358,10 +358,10 @@
   <hr>
 
   <!-- ════════════════════════════════════════
-       DATA LAYER
+       DATA 
   ════════════════════════════════════════ -->
-  <section id="data-layer">
-    <span class="section-badge">🗄️ Data Layer</span>
+  <section id="data-">
+    <span class="section-badge">🗄️ Data </span>
     <h2>Modelo de Datos</h2>
 
     <p>
@@ -386,10 +386,10 @@
   <hr>
 
   <!-- ════════════════════════════════════════
-       APPLICATION LAYER
+       APPLICATION 
   ════════════════════════════════════════ -->
-  <section id="app-layer">
-    <span class="section-badge">🧩 Application Layer</span>
+  <section id="app-">
+    <span class="section-badge">🧩 Application </span>
     <h2>Capa de Aplicación</h2>
 
     <p>
@@ -462,10 +462,10 @@
   <hr>
 
   <!-- ════════════════════════════════════════
-       ETL LAYER
+       ETL 
   ════════════════════════════════════════ -->
-  <section id="etl-layer">
-    <span class="section-badge">🔄 ETL Layer</span>
+  <section id="etl-">
+    <span class="section-badge">🔄 ETL </span>
     <h2>Capa ETL – Extracción, Transformación y Carga</h2>
 
     <p>
@@ -524,11 +524,11 @@
   <hr>
 
   <!-- ════════════════════════════════════════
-       DATA WAREHOUSE LAYER
+       DATA WAREHOUSE 
   ════════════════════════════════════════ -->
-  <section id="dw-layer">
+  <section id="dw-">
     <span class="section-badge">🧱 Data Warehouse</span>
-    <h2>Data Warehouse Layer – Capa de Almacén de Datos</h2>
+    <h2>Data Warehouse  – Capa de Almacén de Datos</h2>
 
     <p>
       La capa de Data Warehouse constituye el núcleo estructurado del sistema analítico.
@@ -562,10 +562,10 @@
   <hr>
 
   <!-- ════════════════════════════════════════
-       PRESENTATION LAYER (original + ampliado)
+       PRESENTATION  (original + ampliado)
   ════════════════════════════════════════ -->
-  <section id="presentation-layer">
-    <span class="section-badge">📊 Presentation Layer</span>
+  <section id="presentation-">
+    <span class="section-badge">📊 Presentation </span>
     <h2>Interfaz general de Power BI</h2>
 
     <p>
